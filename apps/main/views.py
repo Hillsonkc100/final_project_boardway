@@ -36,7 +36,7 @@ class ApplyJobView(View):
             messages.error(self.request, "Please complete your profile first !")
             return redirect("home_page")
         job_id = kwargs["job_id"]
-        job = job.objects.get(id=job_id)
+        job = Job.objects.get(id=job_id)
         JobApplication.objects.create(job=job, user=self.request.user, status=APPLIED)
         messages.success(self.request, "successfully applied to the job !")
         return redirect("home_page")
