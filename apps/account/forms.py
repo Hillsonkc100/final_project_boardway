@@ -29,15 +29,15 @@ class UserRegisterForm(forms.ModelForm):
         return cleaned_data
 
     # def clean_password1(self):  # validate_password1 for serializers
-    #     password1 = self.cleaned_data.get("password1")
-    #     print(password1)
-    #     if len(password1) < 8:
-    #         print("Length Validation")
-    #         raise forms.ValidationError("Password must be 8 characters long!")
-    #     if not re.search(r'\d', password1) or not re.search(r'[A-Za-z]', password1):
-    #         print("Numbers and chars")
-    #         raise forms.ValidationError("Password must contain both numbers and characters.")
-    #     return password1
+    #      password1 = self.cleaned_data.get("password1")
+    #      print(password1)
+    #      if len(password1) < 8:
+    #          print("Length Validation")
+    #          raise forms.ValidationError("Password must be 8 characters long!")
+    #      if not re.search(r'\d', password1) or not re.search(r'[A-Za-z]', password1):
+    #          print("Numbers and chars")
+    #          raise forms.ValidationError("Password must contain both numbers and characters.")
+    #      return password1
 
 
 class UserLoginForm(forms.Form):

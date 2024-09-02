@@ -90,3 +90,5 @@ class PaymentVerify(View):
             return redirect("home_page")
         messages.error(self.request, "Could not verify the payment")
         return redirect("home_page")
+
+   

@@ -11,7 +11,7 @@ class Category(DateTimeModel):
 
     def __str__(self):
         return self.title
-    
+
     class Meta:
         verbose_name_plural = "Categories"
 
@@ -25,7 +25,7 @@ class Job(DateTimeModel):
 
     def __str__(self):
         return self.title
-    
+
 APPLIED = 'Applied'
 SCREENING = 'Screening'
 DECLINED = 'Declined'
@@ -49,3 +49,9 @@ class JobApplication(DateTimeModel):
 
     def __str__(self):
         return f"{self.user.username} - {self.job.title}"
+
+# class Contact(models.Model):
+#     # Define your fields here
+#     name = models.CharField(max_length=100)
+#     email = models.EmailField()
+#     message = models.TextField()

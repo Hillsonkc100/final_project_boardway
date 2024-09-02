@@ -5,3 +5,7 @@ from .models import Category, Job, JobApplication
 admin.site.register(Category)
 admin.site.register(Job)
 admin.site.register(JobApplication)
+
+# class ContactAdmin(admin.ModelAdmin):
+#     pass
+#

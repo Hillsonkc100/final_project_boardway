@@ -8,5 +8,8 @@ urlpatterns = [
     path("my-jobs/", views.MyJobs.as_view(), name="my_jobs"),
     path("khalti/", views.KhaltiPayment.as_view(), name="khalti_payment"),
     path("payment-verify/", views.PaymentVerify.as_view(), name="payment_verify"),
+    # path("about/", views.AboutUs.as_view(), name="about_us"),
+    # path("contact/", views.Contact.as_view(), name='contact_us'),
     path("", views.HomePageView.as_view(), name="home_page")
 ]
+
